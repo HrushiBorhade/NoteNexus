@@ -1,8 +1,8 @@
 import React from "react";
 import { Container, Row } from "react-bootstrap";
-import "./Layout.css";
+import "./Screen.css";
 
-function Layout({ children, title }) {
+function MainScreen({ children, title }) {
   return (
     <div className="mainback">
       <Container>
@@ -22,4 +22,4 @@ function Layout({ children, title }) {
   );
 }
 
-export default Layout;
+export default MainScreen;
