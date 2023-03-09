@@ -18,7 +18,7 @@ const Footer = () => {
         </Row>
         <Row>
           <Col className="text-center">
-            <a href="https://github.com/HrushiBorhade/">@Hrushi Borhade</a>
+            <a href="https://github.com/HrushiBorhade/">Hrushi Borhade</a>
           </Col>
         </Row>
       </Container>
