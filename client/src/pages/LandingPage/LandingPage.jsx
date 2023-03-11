@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { Button, Container, Row } from "react-bootstrap";
 import "./LandingPage.css";
 
@@ -14,7 +14,7 @@ function LandingPage({}) {
             </div>
             <div className="buttonContainer">
               <>
-                <Button size="lg" className="landingbutton">
+                <Button size="lg" className="landingbutton" href="/login">
                   Login
                 </Button>
               </>
@@ -23,6 +23,7 @@ function LandingPage({}) {
                   variant="outline-primary"
                   size="lg"
                   className="landingbutton"
+                  href="/register"
                 >
                   Signup
                 </Button>
