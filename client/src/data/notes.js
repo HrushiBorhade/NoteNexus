@@ -1,4 +1,4 @@
-const notes = [
+export const notes = [
   {
     _id: "1",
     title: "Learned about JS",
@@ -27,4 +27,4 @@ const notes = [
   },
 ];
 
-export default notes;
+// export default notes;
