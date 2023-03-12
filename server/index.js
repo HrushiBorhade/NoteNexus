@@ -3,6 +3,7 @@ const dotenv = require("dotenv");
 const notes = require("./data/notes");
 const connectDB = require("./config/db");
 const userRoutes = require("./routes/userRoutes");
+const noteRoutes = require("./routes/noteRoutes");
 const { errorHandler, notFound } = require("./middlewares/errorMiddleware");
 const bodyParser = require("body-parser");
 
@@ -29,7 +30,7 @@ app.get("/api/notes", (req, res) => {
   res.send(notes);
 });
 app.use("/api/users", userRoutes);
-
+app.use("/api/notes", noteRoutes);
 app.get("/", (req, res) => {
   res.send("API is running...");
 });
