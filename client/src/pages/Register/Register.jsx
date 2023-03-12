@@ -1,26 +1,29 @@
-import React, { useState } from "react";
-
+import React, { useState, useEffect } from "react";
 import { Form, Button, Row, Col } from "react-bootstrap";
-
 import { Link } from "react-router-dom";
-
 import Layout from "../../components/Layout";
 import "./Register.css";
-import axios from "axios";
+import { useNavigate } from "react-router-dom";
 import Loader from "../../components/Loader";
 import ErrorMessage from "../../components/ErrorMessage";
+import { useDispatch, useSelector } from "react-redux";
+import { register } from "../../actions/userActions";
 const Register = () => {
-  const [name, setName] = useState("");
   const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
-  const [loading, setLoading] = useState("");
-  const [error, setError] = useState("");
+  const [name, setName] = useState("");
   const [pic, setPic] = useState(
     "https://icon-library.com/images/anonymous-avatar-icon/anonymous-avatar-icon-25.jpg"
   );
+  const [password, setPassword] = useState("");
   const [confirmpassword, setConfirmPassword] = useState("");
   const [message, setMessage] = useState(null);
   const [picMessage, setPicMessage] = useState(null);
+
+  const navigate = useNavigate();
+  const dispatch = useDispatch();
+
+  const userRegister = useSelector((state) => state.userRegister);
+  const { loading, error, userInfo } = userRegister;
 
   const postDetails = (pics) => {
     if (
@@ -33,15 +36,14 @@ const Register = () => {
     if (pics.type === "image/jpeg" || pics.type === "image/png") {
       const data = new FormData();
       data.append("file", pics);
-      data.append("upload_preset", "NoteNexus");
-      data.append("cloud_name", "dmqdf1j4n");
-      fetch("https://api.cloudinary.com/v1_1/dmqdf1j4n/image/upload", {
+      data.append("upload_preset", "notezipper");
+      data.append("cloud_name", "piyushproj");
+      fetch("https://api.cloudinary.com/v1_1/piyushproj/image/upload", {
         method: "post",
         body: data,
       })
         .then((res) => res.json())
         .then((data) => {
-          console.log(data);
           setPic(data.url.toString());
         })
         .catch((err) => {
@@ -52,33 +54,19 @@ const Register = () => {
     }
   };
 
-  const submitHandler = async (e) => {
+  useEffect(() => {
+    if (userInfo) {
+      navigate("/mynotes");
+    }
+  }, [navigate, userInfo]);
+
+  const submitHandler = (e) => {
     e.preventDefault();
 
     if (password !== confirmpassword) {
       setMessage("Passwords do not match");
     } else {
-      setMessage(null);
-      setLoading(true);
-      try {
-        const config = {
-          headers: {
-            "Content-type": "application/json",
-          },
-        };
-
-        const { data } = await axios.post(
-          "http://127.0.0.1:5002/api/users/register",
-          { name, pic, email, password },
-          config
-        );
-        console.log(data);
-        localStorage.setItem("userInfo", JSON.stringify(data));
-        setLoading(false);
-      } catch (error) {
-        setError(error.response.data.message);
-        setLoading(false);
-      }
+      dispatch(register(name, email, password, pic));
     }
   };
   return (
