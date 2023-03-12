@@ -2,7 +2,7 @@ import React from "react";
 import { Container, Row } from "react-bootstrap";
 import "./Layout.css";
 
-function Layout({ children, title }) {
+const Layout = ({ children, title }) => {
   return (
     <div className="mainback">
       <Container>
@@ -20,6 +20,6 @@ function Layout({ children, title }) {
       </Container>
     </div>
   );
-}
+};
 
 export default Layout;

@@ -8,8 +8,9 @@ import {
   NavDropdown,
 } from "react-bootstrap";
 import { Link } from "react-router-dom";
-
-function Header({}) {
+import { useNavigate } from "react-router-dom";
+function Header() {
+  const navigate = useNavigate();
   return (
     <Navbar collapseOnSelect expand="lg" bg="primary" variant="dark">
       <Container>
@@ -46,7 +47,14 @@ function Header({}) {
                 </NavDropdown.Item>
 
                 <NavDropdown.Divider />
-                <NavDropdown.Item>Logout</NavDropdown.Item>
+                <NavDropdown.Item
+                  onClick={() => {
+                    localStorage.removeItem("userInfo");
+                    navigate("/");
+                  }}
+                >
+                  Logout
+                </NavDropdown.Item>
               </NavDropdown>
             </>
           </Nav>
