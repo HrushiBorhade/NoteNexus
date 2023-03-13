@@ -18,35 +18,35 @@
 - [JWT token]()
 - [bcryptJS]()
 
-# ![Note Zipper](https://github.com/HrushiBorhade/NoteNexus/blob/master/images/LandingPageWeb.png)
+# ![Note Zipper](https://github.com/HrushiBorhade/NoteNexus/blob/main/images/LandingPageWeb.png)
 
 ### Landing Page
 
-![](https://github.com/HrushiBorhade/NoteNexus/blob/master/images/LandingPageWeb.png)
-![](https://github.com/HrushiBorhade/NoteNexus/blob/master/images/LandingPageMobile.png)
+![](https://github.com/HrushiBorhade/NoteNexus/blob/main/images/LandingPageWeb.png)
+![](https://github.com/HrushiBorhade/NoteNexus/blob/main/images/LandingPageMobile.png)
 
 ### Login and Registration Page
 
 You can register a new account or login with an existing one.
 
-![](https://github.com/HrushiBorhade/NoteNexus/blob/master/images/LoginPageWeb.png)
-![](https://github.com/HrushiBorhade/NoteNexus/blob/master/images/RegisterPageWeb.png)
+![](https://github.com/HrushiBorhade/NoteNexus/blob/main/images/LoginPageWeb.png)
+![](https://github.com/HrushiBorhade/NoteNexus/blob/main/images/RegisterPageWeb.png)
 
 ### All Notes
 
-![](https://github.com/HrushiBorhade/NoteNexus/blob/master/images/MyNotesPageWeb.png)
-![](https://github.com/HrushiBorhade/NoteNexus/blob/master/images/MyNotesPageMobile.png)
+![](https://github.com/HrushiBorhade/NoteNexus/blob/main/images/MyNotesPageWeb.png)
+![](https://github.com/HrushiBorhade/NoteNexus/blob/main/images/MyNotesPageMobile.png)
 
 ### Create a Note
 
-![](https://github.com/HrushiBorhade/NoteNexus/blob/master/images/NotePageWeb.png)
+![](https://github.com/HrushiBorhade/NoteNexus/blob/main/images/NotePageWeb.png)
 
 ### Edit Profile
 
-![](https://github.com/HrushiBorhade/NoteNexus/blob/master/images/ProfilePageMobile.png)
+![](https://github.com/HrushiBorhade/NoteNexus/blob/main/images/ProfilePageMobile.png)
 
 ### Mobile Responsive
 
-![](https://github.com/HrushiBorhade/NoteNexus/blob/master/images/NavbarMobile.png)
+![](https://github.com/HrushiBorhade/NoteNexus/blob/main/images/NavbarMobile.png)
 
 MIT © [Hrushikesh Borhade](https://github.com/HrushiBorhade)
