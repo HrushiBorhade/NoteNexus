@@ -1,4 +1,4 @@
-# NoteNexus
+# NoteNexus📝
 
 <table>
 <tr>
