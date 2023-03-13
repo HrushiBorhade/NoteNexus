@@ -3,7 +3,7 @@
 <table>
 <tr>
 <td>
- NoteNexus is a Full Stack Notes application 🚀. Built using ReactJS , Redux , Redux-thunk , React-bootstrap ,<br/> NodeJS, ExpressJS, MongoDB, JWT-token , bcrypt
+ NoteNexus is a Full Stack Notes application 🚀. <br/>Built using ReactJS , Redux , Redux-thunk , React-bootstrap ,<br/> NodeJS, ExpressJS, MongoDB, JWT-token , bcrypt
  .<br/>Completely Mobile Responsive
 </td>
 </tr>
@@ -40,4 +40,5 @@ You can register a new account or login with an existing one.
 ![](https://github.com/HrushiBorhade/NoteNexus/blob/main/images/NavbarMobile.png)
 ![](https://github.com/HrushiBorhade/NoteNexus/blob/main/images/MyNotesPageMobile.png)
 ![](https://github.com/HrushiBorhade/NoteNexus/blob/main/images/ProfilePageMobile.png)
+### All Rights Reserved
 MIT © [Hrushikesh Borhade](https://github.com/HrushiBorhade)
