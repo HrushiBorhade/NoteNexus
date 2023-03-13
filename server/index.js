@@ -6,7 +6,7 @@ const userRoutes = require("./routes/userRoutes");
 const noteRoutes = require("./routes/noteRoutes");
 const { errorHandler, notFound } = require("./middlewares/errorMiddleware");
 const bodyParser = require("body-parser");
-
+const path = require("path");
 dotenv.config();
 connectDB();
 
@@ -29,9 +29,22 @@ app.use(function (req, res, next) {
 
 app.use("/api/users", userRoutes);
 app.use("/api/notes", noteRoutes);
-app.get("/", (req, res) => {
-  res.send("API is running...");
-});
+
+// // --------------------------deployment------------------------------
+// const _dirname = path.resolve();
+
+// if (process.env.NODE_ENV === "production") {
+//   app.use(express.static(path.join(_dirname, "../client/build")));
+
+//   app.get("*", (req, res) =>
+//     res.sendFile(path.resolve(_dirname, "../client", "build", "index.html"))
+//   );
+// } else {
+//   app.get("/", (req, res) => {
+//     res.send("API is running..");
+//   });
+// }
+// // --------------------------deployment------------------------------
 
 app.use(notFound);
 app.use(errorHandler);

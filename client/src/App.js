@@ -9,6 +9,7 @@ import Login from "./pages/Login/Login";
 import Register from "./pages/Register/Register";
 import CreateNote from "./pages/SingleNote/CreateNote";
 import SingleNote from "./pages/SingleNote/SingleNote";
+import Profile from "./pages/Profile/Profile";
 function App() {
   const [search, setSearch] = useState("");
   return (
@@ -21,7 +22,8 @@ function App() {
           <Route path="/register" element={<Register />} index />
           <Route path="/mynotes" element={<MyNotes search={search} />} index />
           <Route path="/note/:id" element={<SingleNote />} />
-          <Route path="/createnote" element={<CreateNote />} />;
+          <Route path="/createnote" element={<CreateNote />} />
+          <Route path="/profile" element={<Profile />} />
         </Routes>
       </main>
       <Footer />

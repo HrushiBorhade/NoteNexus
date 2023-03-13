@@ -52,7 +52,7 @@ function MyNotes({ search }) {
   };
 
   return (
-    <Layout title={`Elevate Your Productivity ${userInfo && userInfo.name}..`}>
+    <Layout title={`Elevate Your Productivity ${userInfo && userInfo.name}`}>
       {console.log(notes)}
       <Link to="/createnote">
         <Button style={{ marginLeft: 10, marginBottom: 6 }} size="lg">
@@ -117,7 +117,7 @@ function MyNotes({ search }) {
                       <footer className="blockquote-footer">
                         Created on{" "}
                         <cite title="Source Title">
-                          {/* {note.createdAt.substring(0, 10)} */}
+                          {note.createdAt.substring(0, 10)}
                         </cite>
                       </footer>
                     </blockquote>
