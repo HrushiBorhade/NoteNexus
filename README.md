@@ -4,7 +4,7 @@
 <tr>
 <td>
  NoteNexus is a Full Stack Notes application 🚀. Built using ReactJS , Redux , React-bootstrap , NodeJS, ExpressJS, MongoDB, JWT-token , bcrypt
- Completely Mobile Responsive
+ .<br/>Completely Mobile Responsive
 </td>
 </tr>
 </table>
