@@ -18,9 +18,9 @@
 ### Login and Registration Page
 
 You can register a new account or login with an existing one.
-
-![](https://github.com/HrushiBorhade/NoteNexus/blob/main/images/LoginPageWeb.png)
 ![](https://github.com/HrushiBorhade/NoteNexus/blob/main/images/RegisterPageWeb.png)
+![](https://github.com/HrushiBorhade/NoteNexus/blob/main/images/LoginPageWeb.png)
+
 
 ### All Notes
 
