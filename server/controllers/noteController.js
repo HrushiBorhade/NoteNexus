@@ -43,7 +43,7 @@ const DeleteNote = asyncHandler(async (req, res) => {
   }
 
   if (note) {
-    await note.remove();
+    await Note.deleteOne({ _id: req.params.id });
     res.json({ message: "Note Removed" });
   } else {
     res.status(404);

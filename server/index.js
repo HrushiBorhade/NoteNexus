@@ -26,9 +26,7 @@ app.use(function (req, res, next) {
   );
   next();
 });
-app.get("/api/notes", (req, res) => {
-  res.send(notes);
-});
+
 app.use("/api/users", userRoutes);
 app.use("/api/notes", noteRoutes);
 app.get("/", (req, res) => {
