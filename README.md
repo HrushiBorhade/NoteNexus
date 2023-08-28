@@ -3,7 +3,7 @@
 <table>
 <tr>
 <td>
- NoteNexus is a Full Stack Notes application 🚀. <br/>Built using ReactJS , Redux , Redux-thunk , React-bootstrap ,<br/> NodeJS, ExpressJS, MongoDB, JWT-token , bcrypt
+ NoteNexus is a Full Stack Notes application 🚀. <br/>Built using ReactJS , Redux , Redux-thunk , React-bootstrap ,<br/> NodeJS, ExpressJS, MongoDB, JWT , bcrypt
  .<br/>Completely Mobile Responsive
 </td>
 </tr>
